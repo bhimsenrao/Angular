@@ -1,0 +1,14 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  
+<img src="assets/img/Tulips.jpg" width="100" height="100"/>  
+<!--
+<img src="Tulips.jpg" width="200" height="200"/>-->
+</div>
+<hr/>
+View Data
+{{data}}
+<ul *ngFor = "let data of httpdata">
+  <li>Name : {{data.name}} Address: {{data.address.city}}</li>
+</ul>
+<router-outlet></router-outlet>
