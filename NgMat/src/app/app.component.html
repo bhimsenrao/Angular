@@ -1,0 +1,20 @@
+
+<app-navigation></app-navigation>
+
+<button mat-button>Click</button>
+<br/>
+<hr/>
+<mat-form-field>
+  <select matNativeControl required>
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+  </select>
+  <br/>
+  <br/>
+<input matInput [matDatepicker]="picker" 
+placeholder="Choose a date">
+  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker #picker></mat-datepicker>
+</mat-form-field>

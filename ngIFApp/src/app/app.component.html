@@ -1,0 +1,22 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ appTitle }}!
+  </h1>
+  <div *ngIf='appStatus;else temp'>Done</div>
+  <br/>
+  <ng-template #temp>
+    If isValid is false
+</ng-template>
+  Main Application
+  <ul>
+    <li *ngFor="let code of codes">{{code}}
+    </li>
+  </ul>
+  {{color}}
+  <div [ngSwitch]="color" >
+              <p *ngSwitchCase="'red'">Red is shown</p>
+              <p *ngSwitchCase="'blue'">Blue is shown</p>
+              <p *ngSwitchDefault>Unknown</p> 
+        </div> 
+</div>

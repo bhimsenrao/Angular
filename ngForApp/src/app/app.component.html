@@ -1,0 +1,14 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div >
+ {{ appTitle }}
+</div>
+
+<table border='1' align='center'>
+<tr><th>ID</th><th>Name</th></tr> 
+
+   <tr  *ngFor = 'let lst of appList'> 
+      <td>{{lst.ID}}</td> 
+      <td>{{lst.Name}}</td> 
+   </tr> 
+   
+</table>
