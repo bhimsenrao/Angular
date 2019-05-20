@@ -1,0 +1,20 @@
+<div>
+    <form action="http://localhost:8900/addrec" method="GET">
+      <table>
+        <tr><td>Name of Person </td>
+        <td><input type="text" name="name" [(ngModel)]="name"> </td></tr>
+        <tr>
+          <td>Address</td>
+          <td><textarea name="address" [(ngModel)]="address" row="5" cols="40"></textarea></td>
+        </tr>
+        <tr>
+          <td> <input type="submit" (click)="addRecord()" value="add">          </td>
+        </tr>
+      </table>
+    </form>
+    {{data.name}}<br>
+  {{data.message}}<br/>
+  Record Added
+  {{data.name}} {{data.address}}<br/>
+  <a href='http://localhost:4200'>refresh to view all</a>
+</div>
