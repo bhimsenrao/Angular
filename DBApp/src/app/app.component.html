@@ -1,0 +1,22 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+<p>
+Search ID <input type="number" name="id1" [(ngModel)]="id"/>
+
+</p>
+<table align='center' border="1">
+<tr *ngFor='let d of data'>
+ 
+  <td *ngIf='id >= d.pid' > {{d.pid}} {{d.name|uppercase}}</td>
+ 
+</tr>
+</table>
+
+<!--
+<router-outlet></router-outlet>
+-->
