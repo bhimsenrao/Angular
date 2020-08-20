@@ -1,0 +1,27 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<div style="text-align:center">
+  <h1>
+    CRUD operations from  {{ title }}!
+  </h1>
+</div>
+<div style="float: left;">
+<hr/>
+<hr/>
+</div>
+
+<div style="float:left; overflow: scroll;width:40%;height:300px;">
+ <table align='center' border="1"> 
+   <tr><th>Name</th>
+  <th>Address</th></tr>
+  <tr *ngFor='let d of data' >
+ 
+  <td  > {{d.name}}</td><td> {{d.address}}</td>
+ 
+</tr>
+</table>
+</div>
+<delrec></delrec> 
+<hr>
+<addrec></addrec>
+<!--<router-outlet></router-outlet>-->
