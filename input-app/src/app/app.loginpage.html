@@ -1,0 +1,27 @@
+<html>
+<body>
+<div>
+  <div >
+    <h1>User Loginpage</h1>
+    <h2>Enter you login data</h2>
+  </div>
+  <div >
+    <form>
+      <div >
+        <label>E-mail</label>
+        <input type="text"  name="email" 
+        [(ngModel)]="username" required>
+      </div>
+      <div>
+        <label>Password</label>
+        <input type="password" name="password">
+      </div>
+      <div>
+        <button>Login</button>
+      </div>
+    </form>
+  </div>
+{{username}}
+</div>
+</body>
+</html>
